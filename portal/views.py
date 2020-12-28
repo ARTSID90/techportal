@@ -11,3 +11,7 @@ def contact(request):
 
 def gadget(request):
     return render(request, 'gadget.html', {})
+
+
+def video(request):
+    return render(request, 'video.html', {})
