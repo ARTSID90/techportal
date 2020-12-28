@@ -7,3 +7,7 @@ def tech(request):
 
 def contact(request):
     return render(request, 'tech-contact.html', {})
+
+
+def gadget(request):
+    return render(request, 'gadget.html', {})
