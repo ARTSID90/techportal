@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Site Metas -->
-    <title>Tech Blog - Stylish Magazine Blog Template</title>
+    <title>Tech Portal - Stylish Magazine Blog Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -48,7 +48,7 @@
 </head>
 <body>
 
-    <div id="wrapper">
+    <center id="wrapper">
         <header class="tech-header header">
             <div class="container-fluid">
                 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
@@ -470,26 +470,30 @@
                         <div class="page-wrapper">
                             <div class="row">
                                 <div class="col-lg-5">
-                                    <h4>Who we are</h4>
-                                    <p>Tech Blog is a personal blog for handcrafted, cameramade photography content, fashion styles from independent creatives around the world.</p>
+                                    <h4>Немного о нас</h4>
+                                    <p>Tech Portal это площадка о мобильных устройствах, которую посещает более 12 000 000 уникальных посетителей ежемесячно. А количество просмотренных страниц превышает 148 000 000 в месяц.</p>
                    
-                                    <h4>How we help?</h4>
-                                    <p>Etiam vulputate urna id libero auctor maximus. Nulla dignissim ligula diam, in sollicitudin ligula congue quis turpis dui urna nibhs. </p>
+                                    <h4>Размещение рекламы</h4>
+                                    <p>Если вы хотите поместить рекламу своей продукции или услуг в интернете, вы можете воспользоваться рекламными площадями сайта Tech Portal.
+                                        На наших площадях проводят успешные рекламные кампании не только крупные компании, но и небольшие фирмы, интернет-магазины и разработчики приложений.
+                                        Каждое нажатие на баннер, размещенный на сайте Tech Portal  — это ваша целевая аудитория, ваша потенциальная прибыль. </p>
              
-                                    <h4>Pre-Sale Question</h4>
-                                    <p>Fusce dapibus nunc quis quam tempor vestibulum sit amet consequat enim. Pellentesque blandit hendrerit placerat. Integertis non.</p>
+                                    <h4>Почему мы ?</h4>
+                                    <p>1. Крупнейший в рунете тематический ресурс, посвященный мобильным устройствам, приложениям и технологиям (аудитория на январь 2020 года: 10,8 млн. человек).</p>
+                                         <p>2. Мы хорошо знаем свою аудиторию и консультируем наших партнеров о наиболее эффективном способе продвижения.</p>
+                                       <p> 3. Мы тщательно выбираем рекламодателей для поддержания доверия среди нашей аудитории.</p>
                                 </div>
                                 <div class="col-lg-7">
+
+                                <form method="post">
                                     <form class="form-wrapper">
-                                        <input type="text" class="form-control" placeholder="Your name">
-                                        <input type="text" class="form-control" placeholder="Email address">
-                                        <input type="text" class="form-control" placeholder="Phone">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                        <textarea class="form-control" placeholder="Your message"></textarea>
-                                        <button type="submit" class="btn btn-primary">Send <i class="fa fa-envelope-open-o"></i></button>
-                                    </form>
-                                </div>
-                            </div>
+                                    {% csrf_token %}
+                                    <form class="form-wrapper">
+                                    {{ form.as_p }}
+                                        <button type="submit" class="btn btn-primary">Отправить<i class="fa fa-envelope-open-o"></i></button>
+                                </form>
+                                     </form>
+                                 </div>
                         </div><!-- end page-wrapper -->
                     </div><!-- end col -->
                 </div><!-- end row -->
