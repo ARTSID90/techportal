@@ -32,3 +32,7 @@ def gadget(request):
 
 def video(request):
     return render(request, 'video.html', {})
+
+
+def single(request):
+    return render(request, 'tech-single.html')

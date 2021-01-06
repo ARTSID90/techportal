@@ -6,4 +6,5 @@ urlpatterns = [
     path('c', views.contact, name="tech-contact"),
     path('g', views.gadget, name="gadget"),
     path('v', views.video, name="video"),
+    path('s', views.single, name="tech-single"),
 ]
