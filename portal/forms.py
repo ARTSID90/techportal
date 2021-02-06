@@ -2,7 +2,7 @@ from django import forms
 
 
 class ContactForm(forms.Form):
-    #name = forms.CharField(label='Ваше Имя', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    #phone = forms.CharField(label='Телефон', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    subject = forms.CharField(label='Номер телефона',  widget=forms.TextInput(attrs={'class': 'form-control'}))
-    content = forms.CharField(label='Текст', widget=forms.Textarea(attrs={'class': 'form-control', "rows": 5}))
+    #recipient_list = forms.CharField(label='Ваше Имя', widget=forms.TextInput(attrs={'class': 'form-control'}))
+    #from_email = forms.EmailField(label='@', widget=forms.TextInput(attrs={'class': 'form-control'}))
+    subject = forms.CharField(label='Ваше имя и Номер телефоа',  widget=forms.TextInput(attrs={'class': 'form-control'}))
+    massage = forms.CharField(label='Текст', widget=forms.Textarea(attrs={'class': 'form-control', "rows": 5}))
