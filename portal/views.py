@@ -38,4 +38,8 @@ def video(request):
 
 
 def single(request):
-    return render(request, 'tech-single.html')
+    return render(request, 'tech-single.html', {})
+
+
+def article(request):
+    return render(request, 'article1.html', {})
