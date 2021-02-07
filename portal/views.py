@@ -42,4 +42,4 @@ def single(request):
 
 
 def article(request):
-    return render(request, 'article1.html', {})
+    return render(request, '../templates/article/article1.html', {})
