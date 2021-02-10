@@ -9,5 +9,9 @@ def single(request):
     return render(request, 'tech-single.html', {})
 
 
-def article(request):
-    return render(request, '../templates/article/article1.html', {})
+def article1(request):
+    return render(request, '../templates/article/article 1.html', {})
+
+
+def article2(request):
+    return render(request, '../templates/article/article 2.html', {})

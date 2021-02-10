@@ -7,5 +7,6 @@ urlpatterns = [
     path('g', views.gadget, name="gadget"),
     path('v', views.video, name="video"),
     path('s', views.single, name="tech-single"),
-    path('a', views.article, name="article1"),
+    path('a', views.article1, name="article 1"),
+    path('2', views.article2, name="article 2"),
 ]
