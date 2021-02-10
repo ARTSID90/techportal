@@ -47,3 +47,7 @@ def article1(request):
 
 def article2(request):
     return render(request, '../templates/article/article 2.html', {})
+
+
+def articlea51(request):
+    return render(request, '../templates/article/article a51.html', {})
