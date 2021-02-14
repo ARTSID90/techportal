@@ -507,4 +507,82 @@
             </div><!-- end container -->
         </section>
 
+ <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'portal/upload/.jpg' %}');">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center white">
+            <h1>Записаться на экскурсию в наш офис</h1>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Appointment Form -->
+          <div class="appointment-form">
+            <form action="{% url 'appointment' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-name" class="form-control" placeholder="Ваше Имя" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-phone" class="form-control" placeholder="Ваш номер телефона" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="email" name="your-email" class="form-control" placeholder="Ваш Email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-address" class="form-control" placeholder="Ваш адрес">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-schedule" class="form-control">
+                      <option value="First Choice Appoinment Time">Выберете время</option>
+                      <option value="с 09:00 до 10:00">с 09:00 до 10:00</option>
+                      <option value="с 11:00 до 12:00">с 11:00 до 12:00</option>
+                      <option value="с 14:00 до 15:00">с 14:00 до 15:00</option>
+                      <option value="с 17:00 до 18:00">с 17:00 до 18:00</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-date" class="form-control">
+                      <option value="Выберите дату">Выберите дату</option>
+                      <option value="Понидельник">Понидельник</option>
+                      <option value="Вторник">Вторник</option>
+                      <option value="Среда">Среда</option>
+                      <option value="Четверг">Четверг</option>
+                      <option value="Пятница">Пятница</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-30">
+                    <textarea name="your-message" class="form-control" placeholder="Ваше сообщение"></textarea>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn dento-btn">Booking Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Book An Oppointment Area End -->
 {% endblock %}
